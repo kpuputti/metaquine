@@ -25,3 +25,10 @@ Project directory structure
             |   `-- qunit.js
             |-- tests.html
             `-- tests.js
+
+Testing
+-------
+
+The test suite is written using QUnit ( http://docs.jquery.com/Qunit
+). The suite can be run by opening the
+${PROJECT_ROOT}/src/tests/tests.html file in a browser.
