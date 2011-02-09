@@ -1,4 +1,5 @@
 /*jslint white: true, onevar: true, undef: true, newcap: true, nomen: true, regexp: true, plusplus: true, bitwise: true, devel: true, browser: true, maxerr: 50, indent: 4 */
+/*global window: false */
 
 (function () {
 
@@ -10,7 +11,7 @@
         }
     };
 
-    Metaquine.prototype = function () {
+    Metaquine = function () {
 
     };
 
@@ -51,14 +52,14 @@
     };
 
     // Evaluate the given s-expression.
-    Metaquine.prototype.eval = function (expression) {
+    Metaquine.prototype.evaluate = function (expression) {
         return null;
     };
 
     // Execute the given string of an s-expression.
     Metaquine.prototype.exec = function (s) {
         // TODO: take environment object as an argument
-        return this.eval(this.parse(s));
+        return this.evaluate(this.parse(s));
     };
 
     // Expose the Metaquine function prototype.
